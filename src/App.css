@@ -1,0 +1,145 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Main layout container */
+.main {
+  height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Left content (editor section) */
+.left {
+  flex: 1;
+  max-width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #111;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+}
+
+/* Tabs: dropdown + button */
+.tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-container {
+  flex: 1;
+  max-width: 220px;
+}
+
+/* Button styling */
+.btnNormal {
+  padding: 10px 16px;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #27272a;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: #18181b;
+  transition: all 0.3s ease;
+}
+
+.btnNormal:hover {
+  background-color: #27272a;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(147, 51, 234, 0.4);
+}
+
+/* Editor container (optional class for custom use) */
+.editor-container {
+  flex: 1;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Right section (response) */
+.right {
+  flex: 1;
+  max-width: 50%;
+  height: 100%;
+  background-color: #111;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* 👈 ADDED this line */
+}
+
+
+.topTabs {
+  border-bottom: 1px solid #27272a;
+  border-top: 1px solid #27272a;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+/* React Select dark styling */
+.css-13cymwt-control {
+  background-color: #18181b !important;
+  border-color: #27272a !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  width: 100% !important;
+  box-shadow: none !important;
+}
+
+.css-13cymwt-control:hover {
+  border-color: #3f3f46 !important;
+}
+
+.css-1nmdiq5-menu {
+  background-color: #18181b !important;
+  color: #fff !important;
+}
+
+.css-10wo9uf-option {
+  background-color: #18181b !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.css-10wo9uf-option:hover {
+  background-color: #27272a !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
