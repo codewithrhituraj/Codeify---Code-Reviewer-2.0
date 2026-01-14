@@ -34,7 +34,7 @@ const App = () => {
   };
 
   const ai = new GoogleGenAI({
-    apiKey: "AIzaSyDHHqC_708Gqa5s6UvrNjaIfVL2MnNRGY8"
+    apiKey: "AIzaSyAHqbnn8TP-WyQvK4JU_3tKwx04O7CbgY8"
   });
 
   async function reviewCode() {
